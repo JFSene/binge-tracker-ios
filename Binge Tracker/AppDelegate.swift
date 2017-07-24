@@ -7,39 +7,71 @@
 //
 
 import UIKit
+import RealmSwift
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
+	var tabBarController: UITabBarController?
+	let vermelhoBase = UIColor(red: 216/256, green: 58/256, blue: 36/256, alpha: 1)
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+
+		window = UIWindow(frame: UIScreen.main.bounds)
+		IQKeyboardManager.sharedManager().enable = true
+		TraktManager.sharedManager.setClientID(clientID: "66c0a23fedc0105d7aea70feb2905d759bb5c7392f22dbc9b0d2ffd2c0aff9d7", clientSecret: "27deaa8f821c708bf2f0096d88855b27a05a54693970eff688778f642bd1e76a", redirectURI: "urn:ietf:wg:oauth:2.0:oob")
+
+
+		let mainController = InitialViewController() as UIViewController
+		//Tabs
+		let watchTab = WatchListViewController(nibName: "WatchListViewController", bundle: nil)
+		watchTab.tabBarItem.title = "Watch List"
+		watchTab.tabBarItem.image = UIImage(named: "ic_tv_white")
+
+		let searchTab = SearchViewController(nibName: "SearchViewController", bundle: nil)
+		searchTab.tabBarItem.title = "Search"
+		searchTab.tabBarItem.image = UIImage(named: "ic_search_white")
+
+		let profileTab = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+		profileTab.tabBarItem.title = "Profile"
+		profileTab.tabBarItem.image = UIImage(named: "ic_profile")
+
+		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.gray], for:.normal)
+		UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.red], for:.selected)
+		self.tabBarController = UITabBarController()
+		self.tabBarController!.setViewControllers([watchTab, searchTab, profileTab], animated: false);
+
+		let navigationController = UINavigationController(rootViewController: mainController)
+		navigationController.navigationBar.isTranslucent = false
+
+		//NavigationBar Appearance settings
+		let navigationBarAppearance = UINavigationBar.appearance()
+		navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+		navigationBarAppearance.tintColor = .white
+		navigationBarAppearance.barTintColor = vermelhoBase
+		UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -80.0), for: .default)
+		
+		//REALM Object
+		let realm = try! Realm()
+		let loggedUser = realm.object(ofType: RealmUser.self, forPrimaryKey: 0)
+		print(loggedUser)
+
+		if loggedUser == nil {
+			self.window?.rootViewController = navigationController
+		} else {
+			let loginViewController = UINavigationController(rootViewController: tabBarController!)
+			self.window?.rootViewController = loginViewController
+		}
+
+
+		self.window?.makeKeyAndVisible()
+
 		return true
 	}
 
-	func applicationWillResignActive(_ application: UIApplication) {
-		// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-		// Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-	}
-
-	func applicationDidEnterBackground(_ application: UIApplication) {
-		// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-		// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-	}
-
-	func applicationWillEnterForeground(_ application: UIApplication) {
-		// Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-	}
-
-	func applicationDidBecomeActive(_ application: UIApplication) {
-		// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-	}
-
-	func applicationWillTerminate(_ application: UIApplication) {
-		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-	}
 
 
 }
