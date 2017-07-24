@@ -31,31 +31,31 @@ class Util {
 	}
 
 	public static func tabController(_ view: UIViewController) {
-//		let watchTab = WatchListViewController(nibName: "WatchListViewController", bundle: nil)
-//		watchTab.tabBarItem.title = "Watch List"
-//		watchTab.tabBarItem.image = UIImage(named: "ic_tv_white")
-//
-//		let searchTab = SearchViewController(nibName: "SearchViewController", bundle: nil)
-//		searchTab.tabBarItem.title = "Search"
-//		searchTab.tabBarItem.image = UIImage(named: "ic_search_white")
-//
-//		let profileTab = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
-//		profileTab.tabBarItem.title = "Profile"
-//		profileTab.tabBarItem.image = UIImage(named: "ic_profile")
-//		tabBarController = UITabBarController()
-//		tabBarController!.setViewControllers([watchTab, searchTab, profileTab], animated: false);
-//
-//		//NavigationBar Appearance settings
-//		navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-//		navigationBarAppearance.tintColor = .white
-//		navigationBarAppearance.barTintColor = ruivo
-//		UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -80.0), for: .default)
-//
-//		let navigationController = UINavigationController(rootViewController: tabBarController!)
-//		navigationController.navigationBar.isTranslucent = false
-//
-//
-//		view.present(navigationController, animated: true, completion: nil)
+		let watchTab = WatchListViewController(nibName: "WatchListViewController", bundle: nil)
+		watchTab.tabBarItem.title = "Watch List"
+		watchTab.tabBarItem.image = UIImage(named: "ic_tv_white")
+
+		let searchTab = SearchViewController(nibName: "SearchViewController", bundle: nil)
+		searchTab.tabBarItem.title = "Search"
+		searchTab.tabBarItem.image = UIImage(named: "ic_search_white")
+
+		let profileTab = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+		profileTab.tabBarItem.title = "Profile"
+		profileTab.tabBarItem.image = UIImage(named: "ic_profile")
+		tabBarController = UITabBarController()
+		tabBarController!.setViewControllers([watchTab, searchTab, profileTab], animated: false);
+
+		//NavigationBar Appearance settings
+		navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+		navigationBarAppearance.tintColor = .white
+		navigationBarAppearance.barTintColor = ruivo
+		UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -80.0), for: .default)
+
+		let navigationController = UINavigationController(rootViewController: tabBarController!)
+		navigationController.navigationBar.isTranslucent = false
+
+
+		view.present(navigationController, animated: true, completion: nil)
 	}
 
 	static func alertMessageSuccess(successMessage: String, controller: UIViewController, title: String, handler: ((UIAlertAction) -> Void)? = nil) {

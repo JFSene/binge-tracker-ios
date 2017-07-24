@@ -28,7 +28,7 @@ class WatchListViewController: UIViewController {
 			case .success(object: let result):
 				print(result)
 				self.show.name = result.title
-				self.show.nextEP = String(describing: result.firstAired)
+				self.show.nextEP = Util.dateParaString(data: result.firstAired!, formato: "dd-MM-yyyy")
 				self.show.porcentagem = "\(String(describing: result.rating))"
 				self.show.sinopse = result.overview
 				break
@@ -37,6 +37,7 @@ class WatchListViewController: UIViewController {
 				break
 			}
 		}
+
 		tableView.reloadData()
 	}
 
