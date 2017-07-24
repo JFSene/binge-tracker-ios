@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1708784E1F26540300FE42AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708784D1F26540300FE42AF /* AppDelegate.swift */; };
-		170878501F26540300FE42AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708784F1F26540300FE42AF /* ViewController.swift */; };
-		170878531F26540300FE42AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170878511F26540300FE42AF /* Main.storyboard */; };
 		170878551F26540300FE42AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170878541F26540300FE42AF /* Assets.xcassets */; };
 		170878581F26540300FE42AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170878561F26540300FE42AF /* LaunchScreen.storyboard */; };
 		170878631F26540300FE42AF /* Binge_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170878621F26540300FE42AF /* Binge_TrackerTests.swift */; };
@@ -36,8 +34,6 @@
 /* Begin PBXFileReference section */
 		1708784A1F26540300FE42AF /* Binge Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binge Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1708784D1F26540300FE42AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1708784F1F26540300FE42AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		170878521F26540300FE42AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170878541F26540300FE42AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170878571F26540300FE42AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		170878591F26540300FE42AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,9 +93,8 @@
 		1708784C1F26540300FE42AF /* Binge Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				1708787B1F26545F00FE42AF /* Resources */,
 				1708784D1F26540300FE42AF /* AppDelegate.swift */,
-				1708784F1F26540300FE42AF /* ViewController.swift */,
-				170878511F26540300FE42AF /* Main.storyboard */,
 				170878541F26540300FE42AF /* Assets.xcassets */,
 				170878561F26540300FE42AF /* LaunchScreen.storyboard */,
 				170878591F26540300FE42AF /* Info.plist */,
@@ -123,6 +118,13 @@
 				1708786F1F26540300FE42AF /* Info.plist */,
 			);
 			path = "Binge TrackerUITests";
+			sourceTree = "<group>";
+		};
+		1708787B1F26545F00FE42AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +239,6 @@
 			files = (
 				170878581F26540300FE42AF /* LaunchScreen.storyboard in Resources */,
 				170878551F26540300FE42AF /* Assets.xcassets in Resources */,
-				170878531F26540300FE42AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				170878501F26540300FE42AF /* ViewController.swift in Sources */,
 				1708784E1F26540300FE42AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +299,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		170878511F26540300FE42AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				170878521F26540300FE42AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		170878561F26540300FE42AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -420,7 +412,7 @@
 				DEVELOPMENT_TEAM = VRPSBVV63P;
 				INFOPLIST_FILE = "Binge Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.barbaruivastudios.Binge-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.barbaruivastudios.Binge-Trackerr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -433,7 +425,7 @@
 				DEVELOPMENT_TEAM = VRPSBVV63P;
 				INFOPLIST_FILE = "Binge Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.barbaruivastudios.Binge-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.barbaruivastudios.Binge-Trackerr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
