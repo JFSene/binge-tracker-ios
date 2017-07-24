@@ -1,0 +1,6 @@
+framework module Pods_Binge_TrackerUITests {
+  umbrella header "Pods-Binge TrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
