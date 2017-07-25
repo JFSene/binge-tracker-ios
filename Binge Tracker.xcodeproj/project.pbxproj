@@ -16,13 +16,10 @@
 		170878811F26574500FE42AF /* BRKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170878801F26574500FE42AF /* BRKeyboard.swift */; };
 		170878831F26576300FE42AF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170878821F26576300FE42AF /* Util.swift */; };
 		170878881F26581800FE42AF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170878861F26581800FE42AF /* InitialViewController.swift */; };
-		170878891F26581800FE42AF /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 170878871F26581800FE42AF /* InitialViewController.xib */; };
 		1708788D1F2658EF00FE42AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708788B1F2658EF00FE42AF /* LoginViewController.swift */; };
-		1708788E1F2658EF00FE42AF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1708788C1F2658EF00FE42AF /* LoginViewController.xib */; };
 		170878911F265A0A00FE42AF /* RealmUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170878901F265A0A00FE42AF /* RealmUser.swift */; };
 		170878961F265A5D00FE42AF /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170878951F265A5D00FE42AF /* Usuario.swift */; };
 		172580201F265C50003F822C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725801E1F265C50003F822C /* SignupViewController.swift */; };
-		172580211F265C50003F822C /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1725801F1F265C50003F822C /* SignupViewController.xib */; };
 		172580231F265D0F003F822C /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580221F265D0F003F822C /* RealmManager.swift */; };
 		1725805F1F266023003F822C /* Calendars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580271F266023003F822C /* Calendars.swift */; };
 		172580601F266023003F822C /* Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580281F266023003F822C /* Checkin.swift */; };
@@ -81,16 +78,20 @@
 		172580951F266023003F822C /* TraktWatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725805D1F266023003F822C /* TraktWatching.swift */; };
 		172580961F266023003F822C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725805E1F266023003F822C /* Users.swift */; };
 		172580A41F2667EF003F822C /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580A21F2667EF003F822C /* WatchListViewController.swift */; };
-		172580A51F2667EF003F822C /* WatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172580A31F2667EF003F822C /* WatchListViewController.xib */; };
 		172580A81F266801003F822C /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580A61F266801003F822C /* WatchListTableViewCell.swift */; };
-		172580A91F266801003F822C /* WatchListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172580A71F266801003F822C /* WatchListTableViewCell.xib */; };
 		172580AC1F266813003F822C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580AA1F266813003F822C /* DetailsViewController.swift */; };
 		172580AD1F266813003F822C /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172580AB1F266813003F822C /* DetailsViewController.xib */; };
 		172580B11F266832003F822C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580AF1F266832003F822C /* ProfileViewController.swift */; };
-		172580B21F266832003F822C /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172580B01F266832003F822C /* ProfileViewController.xib */; };
 		172580B61F266858003F822C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580B41F266858003F822C /* SearchViewController.swift */; };
-		172580B71F266858003F822C /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172580B51F266858003F822C /* SearchViewController.xib */; };
 		172580B91F266A0F003F822C /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172580B81F266A0F003F822C /* Serie.swift */; };
+		17457A4B1F27AA9F00F04221 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17457A4D1F27AA9F00F04221 /* LoginViewController.xib */; };
+		17457A521F27AB5200F04221 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17457A541F27AB5200F04221 /* SignupViewController.xib */; };
+		17457A571F27ABD300F04221 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17457A591F27ABD300F04221 /* InitialViewController.xib */; };
+		17457A5C1F27ABE500F04221 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17457A5E1F27ABE500F04221 /* ProfileViewController.xib */; };
+		17457A611F27ABF200F04221 /* WatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17457A631F27ABF200F04221 /* WatchListViewController.xib */; };
+		17457A661F27ABFC00F04221 /* WatchListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17457A681F27ABFC00F04221 /* WatchListTableViewCell.xib */; };
+		17457A6E1F27B5FA00F04221 /* RealmSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17457A6D1F27B5F900F04221 /* RealmSeries.swift */; };
+		17457A6F1F27DB9400F04221 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17457A711F27DB9400F04221 /* SearchViewController.xib */; };
 		7A9F2AFBF2DBD7DAB2BDD127 /* Pods_Binge_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81899386A01AB04549D17DC7 /* Pods_Binge_TrackerUITests.framework */; };
 		C4CCA8B72E1C63D1E36218E5 /* Pods_Binge_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54172AF16A19DE56DEB97816 /* Pods_Binge_Tracker.framework */; };
 		F122300A0E4DAA03163DD4CC /* Pods_Binge_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08207215194B8D7B3B8BCD74 /* Pods_Binge_TrackerTests.framework */; };
@@ -130,13 +131,10 @@
 		170878801F26574500FE42AF /* BRKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRKeyboard.swift; sourceTree = "<group>"; };
 		170878821F26576300FE42AF /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		170878861F26581800FE42AF /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		170878871F26581800FE42AF /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		1708788B1F2658EF00FE42AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		1708788C1F2658EF00FE42AF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		170878901F265A0A00FE42AF /* RealmUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUser.swift; sourceTree = "<group>"; };
 		170878951F265A5D00FE42AF /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		1725801E1F265C50003F822C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		1725801F1F265C50003F822C /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		172580221F265D0F003F822C /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		172580271F266023003F822C /* Calendars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendars.swift; sourceTree = "<group>"; };
 		172580281F266023003F822C /* Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkin.swift; sourceTree = "<group>"; };
@@ -195,16 +193,28 @@
 		1725805D1F266023003F822C /* TraktWatching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraktWatching.swift; sourceTree = "<group>"; };
 		1725805E1F266023003F822C /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		172580A21F2667EF003F822C /* WatchListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
-		172580A31F2667EF003F822C /* WatchListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchListViewController.xib; sourceTree = "<group>"; };
 		172580A61F266801003F822C /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
-		172580A71F266801003F822C /* WatchListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchListTableViewCell.xib; sourceTree = "<group>"; };
 		172580AA1F266813003F822C /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		172580AB1F266813003F822C /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		172580AF1F266832003F822C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		172580B01F266832003F822C /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		172580B41F266858003F822C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		172580B51F266858003F822C /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		172580B81F266A0F003F822C /* Serie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		17457A451F27A97400F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		17457A4C1F27AA9F00F04221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginViewController.xib; sourceTree = "<group>"; };
+		17457A4F1F27AAA100F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LoginViewController.strings"; sourceTree = "<group>"; };
+		17457A531F27AB5200F04221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SignupViewController.xib; sourceTree = "<group>"; };
+		17457A581F27ABD300F04221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/InitialViewController.xib; sourceTree = "<group>"; };
+		17457A5B1F27ABD500F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InitialViewController.strings"; sourceTree = "<group>"; };
+		17457A5D1F27ABE500F04221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProfileViewController.xib; sourceTree = "<group>"; };
+		17457A601F27ABE900F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/ProfileViewController.strings"; sourceTree = "<group>"; };
+		17457A621F27ABF200F04221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WatchListViewController.xib; sourceTree = "<group>"; };
+		17457A651F27ABF500F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/WatchListViewController.strings"; sourceTree = "<group>"; };
+		17457A671F27ABFC00F04221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WatchListTableViewCell.xib; sourceTree = "<group>"; };
+		17457A6A1F27ABFE00F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/WatchListTableViewCell.strings"; sourceTree = "<group>"; };
+		17457A6C1F27AC2300F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/SignupViewController.strings"; sourceTree = "<group>"; };
+		17457A6D1F27B5F900F04221 /* RealmSeries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmSeries.swift; sourceTree = "<group>"; };
+		17457A701F27DB9400F04221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchViewController.xib; sourceTree = "<group>"; };
+		17457A731F27DB9800F04221 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/SearchViewController.strings"; sourceTree = "<group>"; };
 		37FD20096B0B9089B43F9ACF /* Pods-Binge TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binge TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binge TrackerTests/Pods-Binge TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54172AF16A19DE56DEB97816 /* Pods_Binge_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binge_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		583B8A6B09A638D965F833B6 /* Pods-Binge Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binge Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binge Tracker/Pods-Binge Tracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -340,7 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				170878861F26581800FE42AF /* InitialViewController.swift */,
-				170878871F26581800FE42AF /* InitialViewController.xib */,
+				17457A591F27ABD300F04221 /* InitialViewController.xib */,
 			);
 			name = Initial;
 			sourceTree = "<group>";
@@ -349,7 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				1708788B1F2658EF00FE42AF /* LoginViewController.swift */,
-				1708788C1F2658EF00FE42AF /* LoginViewController.xib */,
+				17457A4D1F27AA9F00F04221 /* LoginViewController.xib */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -358,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				170878901F265A0A00FE42AF /* RealmUser.swift */,
+				17457A6D1F27B5F900F04221 /* RealmSeries.swift */,
 				172580221F265D0F003F822C /* RealmManager.swift */,
 			);
 			name = Repository;
@@ -376,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				1725801E1F265C50003F822C /* SignupViewController.swift */,
-				1725801F1F265C50003F822C /* SignupViewController.xib */,
+				17457A541F27AB5200F04221 /* SignupViewController.xib */,
 			);
 			name = Signup;
 			sourceTree = "<group>";
@@ -546,9 +557,9 @@
 			isa = PBXGroup;
 			children = (
 				172580A21F2667EF003F822C /* WatchListViewController.swift */,
-				172580A31F2667EF003F822C /* WatchListViewController.xib */,
+				17457A631F27ABF200F04221 /* WatchListViewController.xib */,
 				172580A61F266801003F822C /* WatchListTableViewCell.swift */,
-				172580A71F266801003F822C /* WatchListTableViewCell.xib */,
+				17457A681F27ABFC00F04221 /* WatchListTableViewCell.xib */,
 				172580AA1F266813003F822C /* DetailsViewController.swift */,
 				172580AB1F266813003F822C /* DetailsViewController.xib */,
 			);
@@ -559,7 +570,7 @@
 			isa = PBXGroup;
 			children = (
 				172580AF1F266832003F822C /* ProfileViewController.swift */,
-				172580B01F266832003F822C /* ProfileViewController.xib */,
+				17457A5E1F27ABE500F04221 /* ProfileViewController.xib */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -568,7 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				172580B41F266858003F822C /* SearchViewController.swift */,
-				172580B51F266858003F822C /* SearchViewController.xib */,
+				17457A711F27DB9400F04221 /* SearchViewController.xib */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -697,6 +708,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 170878411F26540300FE42AF;
 			productRefGroup = 1708784B1F26540300FE42AF /* Products */;
@@ -715,15 +727,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				172580B21F266832003F822C /* ProfileViewController.xib in Resources */,
-				172580A91F266801003F822C /* WatchListTableViewCell.xib in Resources */,
-				172580A51F2667EF003F822C /* WatchListViewController.xib in Resources */,
-				1708788E1F2658EF00FE42AF /* LoginViewController.xib in Resources */,
-				172580211F265C50003F822C /* SignupViewController.xib in Resources */,
+				17457A5C1F27ABE500F04221 /* ProfileViewController.xib in Resources */,
+				17457A661F27ABFC00F04221 /* WatchListTableViewCell.xib in Resources */,
+				17457A611F27ABF200F04221 /* WatchListViewController.xib in Resources */,
+				17457A4B1F27AA9F00F04221 /* LoginViewController.xib in Resources */,
 				170878581F26540300FE42AF /* LaunchScreen.storyboard in Resources */,
 				170878551F26540300FE42AF /* Assets.xcassets in Resources */,
-				170878891F26581800FE42AF /* InitialViewController.xib in Resources */,
-				172580B71F266858003F822C /* SearchViewController.xib in Resources */,
+				17457A521F27AB5200F04221 /* SignupViewController.xib in Resources */,
+				17457A571F27ABD300F04221 /* InitialViewController.xib in Resources */,
+				17457A6F1F27DB9400F04221 /* SearchViewController.xib in Resources */,
 				172580AD1F266813003F822C /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -905,6 +917,7 @@
 				172580801F266023003F822C /* TraktHistoryItem.swift in Sources */,
 				1708788D1F2658EF00FE42AF /* LoginViewController.swift in Sources */,
 				1725806A1F266023003F822C /* MLKeychain.swift in Sources */,
+				17457A6E1F27B5FA00F04221 /* RealmSeries.swift in Sources */,
 				172580771F266023003F822C /* TraktAnticipatedShow.swift in Sources */,
 				172580691F266023003F822C /* HiddenItem.swift in Sources */,
 				172580781F266023003F822C /* TraktBoxOfficeMovie.swift in Sources */,
@@ -998,8 +1011,72 @@
 			isa = PBXVariantGroup;
 			children = (
 				170878571F26540300FE42AF /* Base */,
+				17457A451F27A97400F04221 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		17457A4D1F27AA9F00F04221 /* LoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17457A4C1F27AA9F00F04221 /* Base */,
+				17457A4F1F27AAA100F04221 /* pt-BR */,
+			);
+			name = LoginViewController.xib;
+			sourceTree = "<group>";
+		};
+		17457A541F27AB5200F04221 /* SignupViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17457A531F27AB5200F04221 /* Base */,
+				17457A6C1F27AC2300F04221 /* pt-BR */,
+			);
+			name = SignupViewController.xib;
+			sourceTree = "<group>";
+		};
+		17457A591F27ABD300F04221 /* InitialViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17457A581F27ABD300F04221 /* Base */,
+				17457A5B1F27ABD500F04221 /* pt-BR */,
+			);
+			name = InitialViewController.xib;
+			sourceTree = "<group>";
+		};
+		17457A5E1F27ABE500F04221 /* ProfileViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17457A5D1F27ABE500F04221 /* Base */,
+				17457A601F27ABE900F04221 /* pt-BR */,
+			);
+			name = ProfileViewController.xib;
+			sourceTree = "<group>";
+		};
+		17457A631F27ABF200F04221 /* WatchListViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17457A621F27ABF200F04221 /* Base */,
+				17457A651F27ABF500F04221 /* pt-BR */,
+			);
+			name = WatchListViewController.xib;
+			sourceTree = "<group>";
+		};
+		17457A681F27ABFC00F04221 /* WatchListTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17457A671F27ABFC00F04221 /* Base */,
+				17457A6A1F27ABFE00F04221 /* pt-BR */,
+			);
+			name = WatchListTableViewCell.xib;
+			sourceTree = "<group>";
+		};
+		17457A711F27DB9400F04221 /* SearchViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17457A701F27DB9400F04221 /* Base */,
+				17457A731F27DB9800F04221 /* pt-BR */,
+			);
+			name = SearchViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1009,6 +1086,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1060,6 +1138,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

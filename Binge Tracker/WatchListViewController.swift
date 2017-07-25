@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import RealmSwift
+import PKHUD
+
 
 class WatchListViewController: UIViewController {
 
@@ -14,36 +17,28 @@ class WatchListViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 	let reusableIdentifier = "WatchListTableViewCell"
 	var show = Serie()
-
-	 var series: [Serie] = {
+	var series: [Serie] = {
 		var gOt = Serie()
+
 		return [gOt]
 	}()
+
+	var realmSerie = RealmSeries()
+
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		prepareNavBar()
-		TraktManager.sharedManager.getShowSummary(showID: "game-of-thrones", extended: [.Full]) { (result) in
-			switch result {
-			case .success(object: let result):
-				print(result)
-				self.show.name = result.title
-				self.show.nextEP = Util.dateParaString(data: result.firstAired!, formato: "dd-MM-yyyy")
-				self.show.porcentagem = "\(String(describing: result.rating))"
-				self.show.sinopse = result.overview
-				break
-			case .error(let error):
-				print(error?.localizedDescription)
-				break
-			}
-		}
 
-		tableView.reloadData()
+
 	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		prepareTableView()
+		prepareSeriesList()
+		tableView.reloadData()
+
 	}
 
 
@@ -59,6 +54,28 @@ extension WatchListViewController {
 		tableView.allowsMultipleSelection = false
 
 	}
+
+	func prepareSeriesList() {
+		TraktManager.sharedManager.getShowSummary(showID: "game-of-thrones", extended: [.Full]) { (result) in
+			HUD.show(.progress)
+			switch result {
+			case .success(let result):
+				self.show.title = result.title
+				self.show.rating = result.rating
+				self.show.firstAired = result.firstAired!
+				self.show.overview = result.overview
+				self.series.append(self.show)
+
+				print(self.series)
+				break
+			case .error(let error):
+				print(error?.localizedDescription)
+				break
+			}
+			HUD.hide()
+		}
+	}
+
 
 	func prepareNavBar() {
 		self.tabBarController?.navigationItem.title = "Watch List"
@@ -77,10 +94,12 @@ extension WatchListViewController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: reusableIdentifier, for: indexPath) as! WatchListTableViewCell
-		cell.seriesNameLabelOUTLET.text = show.name
-		cell.percentageLabelOUTLET.text = show.porcentagem
-		cell.nextEpsiodeLabelOUTLET.text = show.nextEP
-		cell.sinopseLabelOUTLET.text = show.sinopse
+
+	
+		cell.seriesNameLabelOUTLET.text = show.title
+		cell.percentageLabelOUTLET.text = "Ratings: \(show.rating!)"
+		cell.nextEpsiodeLabelOUTLET.text = "First time aired: \(Util.dateParaString(data: show.firstAired!, formato: "dd/MM/yyyy"))"
+		cell.sinopseLabelOUTLET.text = show.overview
 
 		return cell
 	}

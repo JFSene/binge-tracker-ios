@@ -41,10 +41,10 @@ class WatchListTableViewCell: UITableViewCell {
 
 	var serie: Serie? {
 		didSet {
-			seriesNameLabelOUTLET.text = serie?.name
-			percentageLabelOUTLET.text = serie?.porcentagem
-			nextEpsiodeLabelOUTLET.text = serie?.nextEP
-			sinopseLabelOUTLET.text = serie?.sinopse
+			seriesNameLabelOUTLET.text = serie?.title
+			percentageLabelOUTLET.text = String(describing: serie?.rating)
+			nextEpsiodeLabelOUTLET.text = Util.dateParaString(data: (serie?.firstAired)!, formato: "dd-MM-yyyy")
+			sinopseLabelOUTLET.text = serie?.overview
 		}
 	}
 

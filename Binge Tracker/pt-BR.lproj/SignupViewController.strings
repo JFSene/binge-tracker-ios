@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "84J-0g-OEC"; */
+"84J-0g-OEC.normalTitle" = "Finalizar";
+
+/* Class = "UILabel"; text = "E-mail:"; ObjectID = "8N9-Tp-kRF"; */
+"8N9-Tp-kRF.text" = "E-mail:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "JDo-3u-ISB"; */
+"JDo-3u-ISB.text" = "Senha:";
+
+/* Class = "UILabel"; text = "Repeat Password:"; ObjectID = "OBJ-Vl-5pA"; */
+"OBJ-Vl-5pA.text" = "Repetir Senha:";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "o10-lv-vB0"; */
+"o10-lv-vB0.text" = "Nome Completo:";
