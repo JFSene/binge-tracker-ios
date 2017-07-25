@@ -20,6 +20,7 @@
 <p>.TraktKit: Um Wrapper para facilitar o consumo da API.</p>
 <br>
 <h4>- Funcionalidades</h4>
+<p>.Localização e suporte para Ingles e Portugues</p>
 <p>.Initial View com opção de "login" ou "singup"</p>
 <p>.Tela de cadastro</p>
 <p>.Tela de login</p>
