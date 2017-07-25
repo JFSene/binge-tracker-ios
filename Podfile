@@ -9,6 +9,8 @@ target 'Binge Tracker' do
     pod 'RealmSwift'
     pod 'PKHUD', '~> 4.0'
     pod 'IQKeyboardManagerSwift'
+	pod 'ObjectMapper'
+	pod 'Alamofire'
 
   target 'Binge TrackerTests' do
     inherit! :search_paths

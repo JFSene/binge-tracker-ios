@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Next Episode / date"; ObjectID = "JHG-W0-TZI"; */
+"JHG-W0-TZI.text" = "Next Episode / date";
+
+/* Class = "UILabel"; text = "Percentage of serie's completion"; ObjectID = "fpl-Rx-acz"; */
+"fpl-Rx-acz.text" = "Percentage of serie's completion";
+
+/* Class = "UILabel"; text = "Sinopse"; ObjectID = "nN4-xB-X7f"; */
+"nN4-xB-X7f.text" = "Sinopse";
+
+/* Class = "UILabel"; text = "Serie's name:"; ObjectID = "t3r-SV-gJf"; */
+"t3r-SV-gJf.text" = "Serie's name:";

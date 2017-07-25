@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "E-mail:"; ObjectID = "FSY-vI-u34"; */
+"FSY-vI-u34.text" = "E-mail:";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "Gwk-a6-lKu"; */
+"Gwk-a6-lKu.normalTitle" = "Entrar";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "Lye-en-CKv"; */
+"Lye-en-CKv.text" = "Senha:";

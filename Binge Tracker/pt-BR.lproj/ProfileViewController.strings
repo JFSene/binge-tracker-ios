@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Favorite Series:"; ObjectID = "50L-Ck-2ht"; */
+"50L-Ck-2ht.text" = "Series Favoritas:";
+
+/* Class = "UIButton"; normalTitle = "Edit Profile"; ObjectID = "P05-ub-W6v"; */
+"P05-ub-W6v.normalTitle" = "Editar Perfil";
+
+/* Class = "UIButton"; normalTitle = "Save Changes"; ObjectID = "PEH-8d-ev8"; */
+"PEH-8d-ev8.normalTitle" = "Salvar alterações";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "SKP-P2-mnL"; */
+"SKP-P2-mnL.normalTitle" = "Logout";
+
+/* Class = "UILabel"; text = "V."; ObjectID = "Tpe-GS-eid"; */
+"Tpe-GS-eid.text" = "V.";
+
+/* Class = "UILabel"; text = "E-mail:"; ObjectID = "rXo-oW-XaR"; */
+"rXo-oW-XaR.text" = "E-mail:";
+
+/* Class = "UILabel"; text = "Password:"; ObjectID = "t3w-DY-Xpk"; */
+"t3w-DY-Xpk.text" = "Senha:";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "tnf-Jt-ehv"; */
+"tnf-Jt-ehv.text" = "Nome Completo:";
+
+/* Class = "UILabel"; text = "Here you can view and edit your profile"; ObjectID = "ueg-oR-0AO"; */
+"ueg-oR-0AO.text" = "Aqui você pode visualizar e editar seu perfil";

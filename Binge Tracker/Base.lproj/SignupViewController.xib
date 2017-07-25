@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupViewController" customModule="Binge_Tracker" customModuleProvider="target">
+            <connections>
+                <outlet property="doneButtonOUTLET" destination="84J-0g-OEC" id="V5y-SR-heo"/>
+                <outlet property="emailLabelOUTLET" destination="8N9-Tp-kRF" id="5pU-Hg-bFc"/>
+                <outlet property="emailTextFieldOUTLET" destination="gPx-Ay-b7X" id="fWp-XZ-hF3"/>
+                <outlet property="nameLabelOUTLET" destination="o10-lv-vB0" id="XC7-I0-g92"/>
+                <outlet property="nameTextFieldOUTLET" destination="4wg-ED-a1U" id="EPw-WZ-ZxU"/>
+                <outlet property="passwordLabelOUTLET" destination="JDo-3u-ISB" id="AyA-EE-Nzd"/>
+                <outlet property="passwordTextFieldOUTLET" destination="Oea-hv-V4W" id="381-8a-hag"/>
+                <outlet property="repeatPasswordLabelOUTLET" destination="OBJ-Vl-5pA" id="JeL-Oc-vgb"/>
+                <outlet property="repeatPasswordTextFieldOUTLET" destination="t4r-pX-vaW" id="7B5-6C-ff4"/>
+                <outlet property="view" destination="NBw-SN-VhH" id="U4Z-lY-kzO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NBw-SN-VhH">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="2xg-j0-BA8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                    <subviews>
+                        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTA-Ea-97F">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o10-lv-vB0">
+                                    <rect key="frame" x="40" y="30" width="240" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.84169077869999998" green="0.22523170710000001" blue="0.13585194950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="hzH-fS-hyd">
+                                    <rect key="frame" x="35" y="85" width="250" height="1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="TVE-x5-cJj"/>
+                                    </constraints>
+                                    <color key="progressTintColor" red="0.95122009519999995" green="0.4440857768" blue="0.24498859049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </progressView>
+                                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-Ay-b7X">
+                                    <rect key="frame" x="40" y="145" width="260" height="20"/>
+                                    <color key="textColor" red="0.95686274770000002" green="0.41176471110000001" blue="0.21176470820000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N9-Tp-kRF">
+                                    <rect key="frame" x="40" y="111" width="260" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.84169077869999998" green="0.22523170710000001" blue="0.13585194950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uly-W2-cBa">
+                                    <rect key="frame" x="35" y="166" width="250" height="1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="FMT-Kw-2uz"/>
+                                    </constraints>
+                                    <color key="progressTintColor" red="0.95122009519999995" green="0.4440857768" blue="0.24498859049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </progressView>
+                                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-hv-V4W">
+                                    <rect key="frame" x="40" y="226" width="260" height="20"/>
+                                    <color key="textColor" red="0.95686274770000002" green="0.41176471110000001" blue="0.21176470820000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDo-3u-ISB">
+                                    <rect key="frame" x="40" y="192" width="260" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.84169077869999998" green="0.22523170710000001" blue="0.13585194950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="x4q-UU-Isx">
+                                    <rect key="frame" x="35" y="247" width="250" height="1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="bc4-lC-W3Y"/>
+                                    </constraints>
+                                    <color key="progressTintColor" red="0.95122009519999995" green="0.4440857768" blue="0.24498859049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </progressView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4wg-ED-a1U">
+                                    <rect key="frame" x="40" y="64" width="240" height="20"/>
+                                    <color key="textColor" red="0.95122009519999995" green="0.4440857768" blue="0.24498859049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84J-0g-OEC" customClass="BRButton" customModule="Binge_Tracker" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="359" width="260" height="40"/>
+                                    <color key="backgroundColor" red="0.84169077869999998" green="0.22523170710000001" blue="0.13585194950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="V1L-pT-2gZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <state key="normal" title="Done">
+                                        <color key="titleColor" red="0.96854597330000003" green="0.96868139509999995" blue="0.96850329639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="doneButtonACTION:" destination="-1" eventType="touchUpInside" id="Oe9-zb-PCl"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4r-pX-vaW">
+                                    <rect key="frame" x="40" y="307" width="240" height="20"/>
+                                    <color key="textColor" red="0.95686274770000002" green="0.41176471110000001" blue="0.21176470820000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBJ-Vl-5pA">
+                                    <rect key="frame" x="40" y="273" width="240" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.84169077869999998" green="0.22523170710000001" blue="0.13585194950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="beR-Ba-0J5">
+                                    <rect key="frame" x="35" y="328" width="250" height="1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="HbB-bC-63W"/>
+                                    </constraints>
+                                    <color key="progressTintColor" red="0.95122009519999995" green="0.4440857768" blue="0.24498859049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </progressView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96854597330000003" green="0.96868139509999995" blue="0.96850329639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="8N9-Tp-kRF" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="0cl-dl-1DW"/>
+                                <constraint firstAttribute="trailing" secondItem="hzH-fS-hyd" secondAttribute="trailing" constant="35" id="2za-A8-JcG"/>
+                                <constraint firstAttribute="trailing" secondItem="8N9-Tp-kRF" secondAttribute="trailing" constant="20" id="9xh-jI-ftF"/>
+                                <constraint firstItem="84J-0g-OEC" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="30" id="B8c-Zp-Vty"/>
+                                <constraint firstItem="Oea-hv-V4W" firstAttribute="top" secondItem="JDo-3u-ISB" secondAttribute="bottom" constant="8" id="BH9-f1-bTc"/>
+                                <constraint firstItem="gPx-Ay-b7X" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="Cvw-v7-vKZ"/>
+                                <constraint firstItem="Oea-hv-V4W" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="DBu-51-Uxg"/>
+                                <constraint firstItem="84J-0g-OEC" firstAttribute="top" secondItem="beR-Ba-0J5" secondAttribute="bottom" constant="30" id="FJ2-rx-V9l"/>
+                                <constraint firstItem="Uly-W2-cBa" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="35" id="H4N-Yd-aUb"/>
+                                <constraint firstAttribute="trailing" secondItem="Oea-hv-V4W" secondAttribute="trailing" constant="20" id="NJS-eJ-oUa"/>
+                                <constraint firstAttribute="trailing" secondItem="JDo-3u-ISB" secondAttribute="trailing" constant="20" id="NMw-0f-yVV"/>
+                                <constraint firstItem="t4r-pX-vaW" firstAttribute="top" secondItem="OBJ-Vl-5pA" secondAttribute="bottom" constant="8" id="ORr-MG-u42"/>
+                                <constraint firstItem="t4r-pX-vaW" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="PAp-OU-CTv"/>
+                                <constraint firstItem="x4q-UU-Isx" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="35" id="PPu-DQ-hIc"/>
+                                <constraint firstItem="4wg-ED-a1U" firstAttribute="top" secondItem="o10-lv-vB0" secondAttribute="bottom" constant="8" id="Qo6-3x-Qhi"/>
+                                <constraint firstAttribute="trailing" secondItem="o10-lv-vB0" secondAttribute="trailing" constant="40" id="Sbb-Jk-xfN"/>
+                                <constraint firstItem="8N9-Tp-kRF" firstAttribute="top" secondItem="hzH-fS-hyd" secondAttribute="bottom" constant="25" id="T67-oW-dY8"/>
+                                <constraint firstAttribute="trailing" secondItem="4wg-ED-a1U" secondAttribute="trailing" constant="40" id="URK-D1-HTi"/>
+                                <constraint firstAttribute="trailing" secondItem="t4r-pX-vaW" secondAttribute="trailing" constant="40" id="UeG-IW-A6r"/>
+                                <constraint firstItem="x4q-UU-Isx" firstAttribute="top" secondItem="Oea-hv-V4W" secondAttribute="bottom" constant="1" id="Wjs-B3-GXu"/>
+                                <constraint firstItem="Uly-W2-cBa" firstAttribute="top" secondItem="gPx-Ay-b7X" secondAttribute="bottom" constant="1" id="You-Mm-IdI"/>
+                                <constraint firstAttribute="trailing" secondItem="gPx-Ay-b7X" secondAttribute="trailing" constant="20" id="Zr1-G5-E3A"/>
+                                <constraint firstAttribute="trailing" secondItem="84J-0g-OEC" secondAttribute="trailing" constant="30" id="bJ1-7N-w7d"/>
+                                <constraint firstItem="beR-Ba-0J5" firstAttribute="top" secondItem="t4r-pX-vaW" secondAttribute="bottom" constant="1" id="cy1-4C-3uf"/>
+                                <constraint firstItem="hzH-fS-hyd" firstAttribute="top" secondItem="4wg-ED-a1U" secondAttribute="bottom" constant="1" id="e0u-0k-4n3"/>
+                                <constraint firstItem="o10-lv-vB0" firstAttribute="top" secondItem="FTA-Ea-97F" secondAttribute="top" constant="30" id="ee4-OW-MGz"/>
+                                <constraint firstItem="gPx-Ay-b7X" firstAttribute="top" secondItem="8N9-Tp-kRF" secondAttribute="bottom" constant="8" id="gxC-VL-J49"/>
+                                <constraint firstAttribute="trailing" secondItem="x4q-UU-Isx" secondAttribute="trailing" constant="35" id="hC0-Qg-eYV"/>
+                                <constraint firstItem="o10-lv-vB0" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="hvw-g3-S2b"/>
+                                <constraint firstAttribute="trailing" secondItem="OBJ-Vl-5pA" secondAttribute="trailing" constant="40" id="jjE-Sj-kNF"/>
+                                <constraint firstItem="JDo-3u-ISB" firstAttribute="top" secondItem="Uly-W2-cBa" secondAttribute="bottom" constant="25" id="nXn-Qc-Jfo"/>
+                                <constraint firstItem="beR-Ba-0J5" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="35" id="nyZ-Ts-We4"/>
+                                <constraint firstItem="hzH-fS-hyd" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="35" id="oox-uL-FEK"/>
+                                <constraint firstItem="JDo-3u-ISB" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="pF3-Sm-wdf"/>
+                                <constraint firstAttribute="trailing" secondItem="beR-Ba-0J5" secondAttribute="trailing" constant="35" id="rc4-uu-XfH"/>
+                                <constraint firstItem="4wg-ED-a1U" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="rqK-r4-A0A"/>
+                                <constraint firstItem="OBJ-Vl-5pA" firstAttribute="top" secondItem="x4q-UU-Isx" secondAttribute="bottom" constant="25" id="tQy-Qa-6UY"/>
+                                <constraint firstItem="OBJ-Vl-5pA" firstAttribute="leading" secondItem="FTA-Ea-97F" secondAttribute="leading" constant="40" id="upl-Qc-E27"/>
+                                <constraint firstAttribute="trailing" secondItem="Uly-W2-cBa" secondAttribute="trailing" constant="35" id="w23-iS-ndP"/>
+                                <constraint firstAttribute="bottom" secondItem="84J-0g-OEC" secondAttribute="bottom" constant="168" id="yGO-GV-r1P"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="FTA-Ea-97F" firstAttribute="top" secondItem="2xg-j0-BA8" secondAttribute="top" id="0AV-kR-bgH"/>
+                        <constraint firstAttribute="bottom" secondItem="FTA-Ea-97F" secondAttribute="bottom" id="5ll-wG-hl2"/>
+                        <constraint firstItem="FTA-Ea-97F" firstAttribute="leading" secondItem="2xg-j0-BA8" secondAttribute="leading" id="IEB-If-8K1"/>
+                        <constraint firstAttribute="trailing" secondItem="FTA-Ea-97F" secondAttribute="trailing" id="ces-g8-RdK"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FTA-Ea-97F" firstAttribute="width" secondItem="NBw-SN-VhH" secondAttribute="width" id="3NA-4c-5s6"/>
+                <constraint firstAttribute="trailing" secondItem="2xg-j0-BA8" secondAttribute="trailing" id="8jO-Me-Gfp"/>
+                <constraint firstItem="2xg-j0-BA8" firstAttribute="leading" secondItem="NBw-SN-VhH" secondAttribute="leading" id="9Z2-lC-Fst"/>
+                <constraint firstItem="2xg-j0-BA8" firstAttribute="top" secondItem="NBw-SN-VhH" secondAttribute="top" id="DlT-Am-vZ3"/>
+                <constraint firstAttribute="bottom" secondItem="2xg-j0-BA8" secondAttribute="bottom" id="n5T-GS-i9h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-367" y="35"/>
+        </view>
+    </objects>
+</document>
