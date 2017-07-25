@@ -27,3 +27,12 @@
   <p>.Watchlist: Uma linha do tempo com as series favoritas</p>
   <p>.Search: Procurar e adicionar mais series a sua Watchlist [ToDo]</p>
   <p>.Profile: Visualizar e Editar seu perfil, também como salvar suas series favoritas.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4>Contact</h4>
+Joel Sene
+joel.sene@hotmail.com
