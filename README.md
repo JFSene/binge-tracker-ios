@@ -1,5 +1,5 @@
 # binge-tracker-ios
-<h1>App criado para teste,utilizando a  API Trakt.tv</h1>
+#App criado para teste,utilizando a  API Trakt.tv
 <br>
 <br>
 <br>
@@ -13,17 +13,17 @@
 
 <h3>Check list</h3>
 <h4>- Pods % Wrappers</h4>
-.RealmSwift: para persistencia de dados
-.PKHUD: alternativa de activityIndicator
-.IQKeyboardManagerSwift: gerenciador de teclado.
-.ObjectMapper: Um mapper para auxiliar no consumo de dados da API utilizando tipos Genericos.
-.TraktKit: Um Wrapper para facilitar o consumo da API.
+<p>.RealmSwift: para persistencia de dados.</p>
+<p>.PKHUD: alternativa de activityIndicator.</p>
+<p>.IQKeyboardManagerSwift: gerenciador de teclado.</p>
+<p>.ObjectMapper: Um mapper para auxiliar no consumo de dados da API utilizando tipos Genericos.</p>
+<p>.TraktKit: Um Wrapper para facilitar o consumo da API.</p>
 <br>
 <h4>- Funcionalidades</h4>
-.Initial View com opção de "login" ou "singup"
-.Tela de cadastro
-.Tela de login
-.TabBarController com 3 tabs
-  .Watchlist: Uma linha do tempo com as series favoritas
-  .Search: Procurar e adicionar mais series a sua Watchlist [ToDo]
-  .Profile: Visualizar e Editar seu perfil, também como salvar suas series favoritas.
+<p>.Initial View com opção de "login" ou "singup"</p>
+<p>.Tela de cadastro</p>
+<p>.Tela de login</p>
+<p>.TabBarController com 3 tabs</p>
+  <p>.Watchlist: Uma linha do tempo com as series favoritas</p>
+  <p>.Search: Procurar e adicionar mais series a sua Watchlist [ToDo]</p>
+  <p>.Profile: Visualizar e Editar seu perfil, também como salvar suas series favoritas.</p>
